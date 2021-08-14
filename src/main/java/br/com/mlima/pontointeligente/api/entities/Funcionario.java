@@ -41,7 +41,7 @@ public class Funcionario implements Serializable{
 	private Date dataCriacao;
 	private Date dataAtualizacao;
 	private Empresa empresa;
-	private List<Lacamento> lancamento;
+	private List<Lancamento> lancamento;
 	
 	
 	public Funcionario() {
@@ -173,11 +173,11 @@ public class Funcionario implements Serializable{
 	}
 
 	@OneToMany(mappedBy = "funcionario", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-	public List<Lacamento> getLancamento() {
+	public List<Lancamento> getLancamento() {
 		return lancamento;
 	}
 
-	public void setLancamento(List<Lacamento> lancamento) {
+	public void setLancamento(List<Lancamento> lancamento) {
 		this.lancamento = lancamento;
 	}
 	

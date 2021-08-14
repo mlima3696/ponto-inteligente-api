@@ -23,8 +23,8 @@ import br.com.mlima.pontointeligente.api.enums.TipoEnum;
 @Entity
 @Table(name = "lancamento")
 public class Lancamento implements Serializable{
-
-	private static final long serialVersionUID = -1446656595443274300L;
+	
+	private static final long serialVersionUID = 5129193214068353192L;
 	
 	private Long id;
 	private Date data;
